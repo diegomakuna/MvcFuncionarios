@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="funcionariosModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Departamento">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Funcionarios" Relationship="Self.FK_Funcionarios_ToTable" FromRole="Departamento" ToRole="Funcionarios" />
+  </EntityType>
+  <EntityType Name="Funcionarios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nome" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Endereco" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefone" Type="String" MaxLength="24" FixedLength="false" Unicode="false" />
+    <Property Name="Departamento_id" Type="Int32" />
+    <NavigationProperty Name="Departamento" Relationship="Self.FK_Funcionarios_ToTable" FromRole="Funcionarios" ToRole="Departamento" />
+  </EntityType>
+  <Association Name="FK_Funcionarios_ToTable">
+    <End Role="Departamento" Type="Self.Departamento" Multiplicity="0..1" />
+    <End Role="Funcionarios" Type="Self.Funcionarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Funcionarios">
+        <PropertyRef Name="Departamento_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="funcionariosEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Departamento" EntityType="Self.Departamento" />
+    <EntitySet Name="Funcionarios" EntityType="Self.Funcionarios" />
+    <AssociationSet Name="FK_Funcionarios_ToTable" Association="Self.FK_Funcionarios_ToTable">
+      <End Role="Departamento" EntitySet="Departamento" />
+      <End Role="Funcionarios" EntitySet="Funcionarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,88 @@
+﻿@model IEnumerable<MvcFuncionarios.Models.Funcionarios>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Funcionarios</h2>
+
+<p>
+    @Html.ActionLink("Adicionar novo Funcionario", "Create")
+</p>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+@using (Html.BeginForm("Index", "Funcionarios", FormMethod.Get, new { @class = "form-inline", @id = "fCreate" }))
+{
+       
+            <div class="form-group">
+                
+                <p class="form-control-static">Filtrar  </p>
+            </div>
+            <div class="form-group">
+                <select class="form-control" name="filtro">
+                    <option value="">Selecionar filtro</option=">
+                    <option value="Nome">Nome</option>
+                    <option value="Email">Email</option>
+                    <option value="Departamento">Departamento</option>
+                </select>
+            </div>
+           
+            <div class="form-group">
+
+                <input type="text" name="buscatxt" value="@ViewBag.buscatxt"   class="form-control">
+            </div>
+           
+            <button type="submit" class="btn btn-default">Buscar</button>
+      
+}
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Endereco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Telefone)
+        </th>
+        <th>
+            Nome do Departamento
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departamento.Nome)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id }) |
+
+                @Html.ActionLink("Deletar", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

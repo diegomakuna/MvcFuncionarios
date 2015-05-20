@@ -1,0 +1,63 @@
+﻿@model MvcFuncionarios.Models.Funcionarios
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Editar</h2>
+
+@using (Html.BeginForm("Edit", "Funcionarios", FormMethod.Post, new { @class = "form-horizontal", @id = "fCreate" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(model => model.Id)
+
+
+    <div class="form-group">
+        <label for="inputNome" class="col-sm-2 control-label">Nome</label>
+        <div class="col-sm-10">
+            <input type="text" name="Nome" placeholder="Ex.João da Silva" class="form-control required" value="@Model.Nome" />
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEndereco" class="col-sm-2 control-label">Endereço</label>
+        <div class="col-sm-10">
+            <input type="text" name="Endereco" value="@Model.Endereco" placeholder="Ex.Rua forte de alcantara" class="form-control required">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" name="Email" value="@Model.Email" placeholder="Ex.joao@gmai.com" class="form-control required">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputTelefone" class="col-sm-2 control-label">Telefone</label>
+        <div class="col-sm-10">
+            <input type="tel" name="Telefone" value="@Model.Telefone" placeholder="Ex. (00) 0000-00000" class="form-control phone_with_ddd required">
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="inputTelefone" class="col-sm-2 control-label">Departamento</label>
+        <div class="col-sm-10">
+            @Html.DropDownList("Departamento_id", (IEnumerable<SelectListItem>)ViewBag.Departamentoid, new { Class = "form-control" })
+
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <input type="submit" class="btn btn-primary" value="Editar" />
+        </div>
+    </div>
+
+}
+
+<div>
+    @Html.ActionLink("Voltar", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\BUMBLEBEE\TESTEADDIALLETO\MvcFuncionariosPublish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Data/funcionarios.mdf">
+      <publishTime>05/20/2015 03:13:13</publishTime>
+    </File>
+    <File Include="App_Data/funcionarios_log.ldf">
+      <publishTime>05/20/2015 03:13:14</publishTime>
+    </File>
+    <File Include="Assets/css/materialize.css">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/css/materialize.min.css">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/material-design-icons/LICENSE.txt">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/material-design-icons/Material-Design-Icons.eot">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/material-design-icons/Material-Design-Icons.svg">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/material-design-icons/Material-Design-Icons.ttf">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/material-design-icons/Material-Design-Icons.woff">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/material-design-icons/Material-Design-Icons.woff2">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Bold.ttf">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Bold.woff">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Bold.woff2">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Light.ttf">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Light.woff">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Light.woff2">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Medium.ttf">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Medium.woff">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Medium.woff2">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Regular.ttf">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Regular.woff">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Regular.woff2">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Thin.ttf">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Thin.woff">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/font/roboto/Roboto-Thin.woff2">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/js/jquery.js">
+      <publishTime>05/19/2015 19:54:32</publishTime>
+    </File>
+    <File Include="Assets/js/materialize.js">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="Assets/js/materialize.min.js">
+      <publishTime>05/19/2015 19:47:42</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>05/19/2015 18:07:24</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/19/2015 18:07:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/19/2015 18:07:20</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Mvc.FixedDisplayModes.dll">
+      <publishTime>05/19/2015 18:07:22</publishTime>
+    </File>
+    <File Include="bin/MvcFuncionarios.dll">
+      <publishTime>05/20/2015 03:13:13</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/19/2015 18:07:21</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/19/2015 18:07:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>05/19/2015 18:07:24</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>05/19/2015 18:07:23</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/19/2015 18:07:21</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/19/2015 18:07:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/19/2015 18:07:22</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/19/2015 18:07:22</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>05/19/2015 18:07:24</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/19/2015 21:15:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/19/2015 21:15:02</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/19/2015 21:15:02</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/19/2015 18:07:14</publishTime>
+    </File>
+    <File Include="Models/Model1.edmx.diagram">
+      <publishTime>05/19/2015 19:36:25</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/19/2015 18:07:25</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery-mask.js">
+      <publishTime>05/19/2015 23:40:10</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>05/19/2015 23:45:35</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>05/19/2015 21:08:35</publishTime>
+    </File>
+    <File Include="Views/Departamentos/Create.cshtml">
+      <publishTime>05/19/2015 23:32:27</publishTime>
+    </File>
+    <File Include="Views/Departamentos/Delete.cshtml">
+      <publishTime>05/19/2015 23:12:31</publishTime>
+    </File>
+    <File Include="Views/Departamentos/Edit.cshtml">
+      <publishTime>05/19/2015 23:53:37</publishTime>
+    </File>
+    <File Include="Views/Departamentos/Index.cshtml">
+      <publishTime>05/19/2015 21:27:43</publishTime>
+    </File>
+    <File Include="Views/Funcionarios/Create.cshtml">
+      <publishTime>05/19/2015 23:49:55</publishTime>
+    </File>
+    <File Include="Views/Funcionarios/Delete.cshtml">
+      <publishTime>05/20/2015 02:35:54</publishTime>
+    </File>
+    <File Include="Views/Funcionarios/Edit.cshtml">
+      <publishTime>05/20/2015 00:27:26</publishTime>
+    </File>
+    <File Include="Views/Funcionarios/Index.cshtml">
+      <publishTime>05/20/2015 02:29:06</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/19/2015 18:07:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/20/2015 03:10:36</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/19/2015 18:07:14</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/19/2015 18:07:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/20/2015 02:54:53</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
